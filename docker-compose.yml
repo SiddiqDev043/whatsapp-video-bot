@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  whatsapp-bot:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: whatsapp-video-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - DB_PATH=/app/data/bot.db
+      - AUTH_DIR=/app/data/auth
+      - DOWNLOAD_DIR=/app/data/downloads
+      - YTDLP_PATH=/usr/local/bin/yt-dlp
+    volumes:
+      - bot-data:/app/data
+      - bot-logs:/app/logs
+    # Data persistence: bot-data menyimpan auth, database, dan download agar tidak hilang saat restart.
+    # WhatsApp login uses a QR code printed to stdout on first run:
+    #   docker compose logs -f whatsapp-bot
+    stdin_open: true
+    tty: true
+
+volumes:
+  bot-data:
+  bot-logs:

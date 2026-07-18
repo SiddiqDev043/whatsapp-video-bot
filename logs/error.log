@@ -1,0 +1,15 @@
+[2026-07-14T23:31:23.256Z] ERROR: TypeError: Cannot read properties of undefined (reading 'child')
+    at makeNoiseHandler (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Utils/noise-handler.js:12:21)
+    at makeSocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:35:19)
+    at makeUSyncSocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/usync.js:6:18)
+    at makeChatsSocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/chats.js:16:18)
+    at makeGroupsSocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/groups.js:7:18)
+    at makeMessagesSocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/messages-send.js:13:39)
+    at makeMessagesRecvSocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/messages-recv.js:15:18)
+    at makeBusinessSocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/business.js:6:18)
+    at makeCommunitiesSocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/communities.js:8:18)
+    at makeWASocket (file:///D:/Backup/Program/BotWaDrachin/whatsapp-video-bot/whatsapp-video-bot/node_modules/@whiskeysockets/baileys/lib/Socket/index.js:14:12) {"error":"Cannot read properties of undefined (reading 'child')"}
+[2026-07-15T07:45:36.945Z] ERROR: Download command failed {"userId":"268899916488866@lid","globalIndex":8,"error":"Media upload failed on all hosts"}
+[2026-07-15T08:11:38.566Z] ERROR: Search command failed {"userId":"268899916488866@lid","query":"drama china","error":"Cannot read properties of undefined (reading 'browseId')"}
+[2026-07-15T08:40:23.592Z] ERROR: Search command failed {"userId":"268899916488866@lid","query":"brikan saya drama china","error":"Cannot read properties of undefined (reading 'browseId')"}
+[2026-07-16T01:22:30.124Z] ERROR: Reconnect limit reached.
