@@ -1,0 +1,36 @@
+{
+  "name": "whatsapp-video-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp bot (Baileys) for natural-language YouTube search and video delivery",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "migrate": "node dist/database/migrate.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc13",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "link-preview-js": "^3.2.0",
+    "p-queue": "^7.4.1",
+    "pino": "^9.4.0",
+    "qrcode-terminal": "^0.12.0",
+    "winston": "^3.14.2",
+    "youtube-sr": "^4.3.11"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.14.15",
+    "@types/qrcode-terminal": "^0.12.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
