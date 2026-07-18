@@ -1,3 +1,4 @@
+import "./server";
 import './database/db'; // ensures schema is initialized on boot
 import { baileysProvider } from './providers/baileysProvider';
 import { routeIncomingMessage } from './commands/commandRouter';
